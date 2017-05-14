@@ -1,3 +1,13 @@
+<?php
+  if(isset($_POST['submit'])) {
+    session_start(); // start the session
+
+    $_SESSION['name'] = htmlentities($_POST['name']);
+    $_SESSION['email'] = htmlentities($_POST['email']);
+
+    header('Location: page2.php');
+  }
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
