@@ -1,3 +1,12 @@
+<?php
+  if (isset($_POST['submit'])) {
+    $username = htmlentities($_POST['username']);
+
+    setcookie('username', $username, time()+3600); // 1 hour
+
+    header('Location: page2.php');
+  }
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
