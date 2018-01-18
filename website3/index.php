@@ -29,10 +29,8 @@
         // email headers
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-				$headers .= "Content-Transfer-Encoding: 7bit\r\n";
         // additional headers
         $headers .= "From: " . $name . "<" . $email . ">" . "\r\n";
-				$headers .= "Reply-To: davidmwhynot@gmail.com\r\n";
         if(mail($toEmail, $subject, $body, $headers)) {
           // email sent
           $msg = 'Your email has been sent';
