@@ -25,7 +25,7 @@
       <h1>Client Info</h1>
       <?php if($client): ?>
         <ul class="list-group">
-          <?php foreach($server as $key => $value): ?>
+          <?php foreach($client as $key => $value): ?>
             <li class="list-group-item">
               <strong><?php echo $key; ?>: </strong>
               <?php echo $value; ?>

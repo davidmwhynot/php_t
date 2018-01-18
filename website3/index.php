@@ -27,10 +27,12 @@
         <h4>Message</h4><p>' . $message . '</p>
         ';
         // email headers
-        $headers = "MIME-Version:1.0" . "\r\n";
-        $headers .= "Content-Type:text/html;charset=UTF-8" . "\r\n";
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+				$headers .= "Content-Transfer-Encoding: 7bit\r\n";
         // additional headers
         $headers .= "From: " . $name . "<" . $email . ">" . "\r\n";
+				$headers .= "Reply-To: davidmwhynot@gmail.com\r\n";
         if(mail($toEmail, $subject, $body, $headers)) {
           // email sent
           $msg = 'Your email has been sent';
@@ -52,7 +54,7 @@
   <head>
     <meta charset="utf-8">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="http://bootswatch.com/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="http://bootswatch.com/3/cosmo/bootstrap.min.css">
   </head>
   <body>
     <nav class="navbar navbar-default">

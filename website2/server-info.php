@@ -8,7 +8,7 @@
     'Document Root' => $_SERVER['DOCUMENT_ROOT'],
     'Current Page' => $_SERVER['PHP_SELF'],
     'Script Name' => $_SERVER['SCRIPT_NAME'],
-    'Absolute Path' => $_SERVER['SCRIPT_FILENAME']
+    'Script Filename' => $_SERVER['SCRIPT_FILENAME']
   ];
 
   print_r($server);
