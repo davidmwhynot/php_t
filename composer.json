@@ -1,0 +1,13 @@
+{
+    "name": "david/php_t",
+    "description": "php_t testing composer stuff i guess",
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
+    },
+    "authors": [
+        {
+            "name": "David Whynot",
+            "email": "davidmwhynot@gmail.com"
+        }
+    ]
+}
