@@ -70,7 +70,7 @@
           <?php echo $msg; ?>
         </div>
       <?php endif; ?>
-      <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+      <form action="" method="post">
         <div class="form-group">
           <label>Name</label>
           <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
