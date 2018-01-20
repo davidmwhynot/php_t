@@ -13,7 +13,7 @@ $mail->SetFrom('noreply@davidwhynot.me', 'David Whynot');
 $mail->AddAddress('davidmwhynot@gmail.com', 'Test');
 $mail->Subject = 'Test email';
 $mail->MsgHTML( $body );
-$mail->IsSMTP();
+//$mail->IsSMTP();
 
 
 if($mail->Send()) {
