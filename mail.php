@@ -14,7 +14,6 @@ $mail->AddAddress('davidmwhynot@gmail.com', 'Test');
 $mail->Subject = 'Test email';
 $mail->MsgHTML( $body );
 $mail->IsSMTP();
-$mail->Host = "smtp.davidwhynot.me";
 
 
 if($mail->Send()) {
