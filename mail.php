@@ -14,7 +14,9 @@ $mail->AddAddress('davidmwhynot@gmail.com', 'Test');
 $mail->Subject = 'Test email';
 $mail->MsgHTML( $body );
 $mail->IsSMTP();
-
+$mail->Host = 'davidwhynot.me';
+$mail->Port = 25;
+$mail->SMTPDebug = 2;
 
 if($mail->Send()) {
 	echo "Mailer success";
