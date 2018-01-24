@@ -8,8 +8,8 @@ $mail = new PHPMailer();
 
 $body = 'An email test!';
 
-$mail->AddReplyTo('noreply@davidwhynot.me', 'David Whynot');
-$mail->SetFrom('noreply@davidwhynot.me', 'David Whynot');
+$mail->AddReplyTo('david@davidwhynot.me', 'David Whynot');
+$mail->SetFrom('david@davidwhynot.me', 'David Whynot');
 $mail->AddAddress('davidmwhynot@gmail.com', 'Test');
 $mail->Subject = 'Test email';
 $mail->MsgHTML( $body );
